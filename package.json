@@ -1,0 +1,26 @@
+{
+  "name": "Necromunda-Campaign-Map",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rossmhoward/Necromunda-Campaign-Map.git",
+  "author": "Ross Howard <r.magic.howard@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "webpack": "^4.29.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack-cli": "^3.2.3"
+  }
+}
