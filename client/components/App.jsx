@@ -1,6 +1,3 @@
-/*
-    ./client/components/App.jsx
-*/
 import React, { Component } from 'react';
 class App extends Component {
   constructor()
@@ -13,12 +10,13 @@ class App extends Component {
 
   componentDidMount()
   {
-    fetch('./gangs/danB.json').
+    fetch('https://yaktribe.games/underhive/json/gang/42822.json').
     then((Response)=>Response.json()).
     then((findresponse)=>
     {
+      console.log(findresponse.gang)
       this.setState({
-        data:findresponse.movies
+        data:findresponse.gang,
       })
     })
   }
@@ -27,10 +25,10 @@ class App extends Component {
     return(
       <div>
         {
-          this.state.data.map((dynamicData,key)=>
+          this.state.data.map((dynamicData,key) =>
           <div>
-            <span>{dynamicData.gang}</span>
-            {dynamicData.gang}
+            <span>{dynamicData.gang_name}</span>
+            <span>{dynamicData.gang_type}</span>
           </div>
           )
         }
