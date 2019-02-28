@@ -27,8 +27,8 @@ class App extends Component {
         {
           this.state.data.map((dynamicData,key) =>
           <div>
-            <span>{dynamicData.gang_name}</span>
-            <span>{dynamicData.gang_type}</span>
+            <span>Name: {dynamicData.gang_name}</span>
+            <span>Type: {dynamicData.gang_type}</span>
           </div>
           )
         }
